@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserEntity {
+  seq: Int!
+  nickname: String!
+  dueDate: String!
+  pregnancyWeek: Int
+}
+
+type Query {
+  getUser(seq: Int!): UserEntity!
+}
+
+type Mutation {
+  updateUser(seq: Int!, nickname: String, dueDate: String): UserEntity!
+}

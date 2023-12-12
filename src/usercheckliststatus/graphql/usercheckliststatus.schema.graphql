@@ -1,0 +1,16 @@
+type UserCheckListStatus {
+    id: ID!
+    user: User!
+    checklist: CheckList!
+    isCompleted: Boolean!
+    isDeleted: Boolean!
+    createdAt: DateTime!
+    updatedAt: DateTime!
+}
+type CheckList {
+    id: ID!
+    weekNumber: Int!
+    content: String!
+    createdAt: DateTime!
+    updatedAt: DateTime!
+}
